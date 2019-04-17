@@ -1,7 +1,7 @@
 from BinarySearch import binary_search
 
 
-def exponential_search(arr: [int], key: int):
+def exponential_search(arr: [int], key: int) -> int:
     """
     Performs exponential search over given array.
     Performs great in unbounded array and when element to be searched is closer to starting index.
