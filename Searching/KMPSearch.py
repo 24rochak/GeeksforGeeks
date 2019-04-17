@@ -74,7 +74,6 @@ def findOccurrences(text: str, pattern: str) -> [int]:
 
         # If characters do not match
         else:
-
             # Point j to the previous repetition
             if j != 0:
                 j = LPS[j - 1]
@@ -88,7 +87,7 @@ def findOccurrences(text: str, pattern: str) -> [int]:
             j = LPS[j - 1]
             # Add index of beginning to matched indices.
             indices.append(i - m)
-
+    # Return list of indices.
     return indices
 
 
