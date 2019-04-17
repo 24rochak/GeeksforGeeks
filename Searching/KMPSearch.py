@@ -2,7 +2,8 @@ def create_LPS(pat: [str], m: int) -> [int]:
     """
     Creates Longest prefix string for the given input pattern.
     Time complexity : O(m)
-    :param pattern: Input pattern
+    :param pat: Input pattern.
+    :param m: Size of pattern.
     :return: Array containing length for longest prefix for each character in the pattern.
     """
 
@@ -42,7 +43,7 @@ def findOccurrences(text: str, pattern: str) -> [int]:
     """
     Finds the occurrences of pattern in a given string.
     Time complexity : O(m+n)
-    :param string: Input string where pattern is to be searched for.
+    :param text: Input string where pattern is to be searched for.
     :param pattern: Pattern which is to be searched.
     :return: Array of indices which point to the location where pattern is present.
     """
