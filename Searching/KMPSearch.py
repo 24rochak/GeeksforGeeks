@@ -54,7 +54,7 @@ def findOccurrences(text: str, pattern: str) -> [int]:
 
     # Obtain the Largest Prefix String(LPS) Array.
     LPS = create_LPS(pattern, m)
-    # print("LPS is : ",LPS)
+    print("LPS is : ",LPS)
 
     # Convert string into character array.
     text = list(text)
@@ -95,7 +95,7 @@ def findOccurrences(text: str, pattern: str) -> [int]:
 if __name__ == '__main__':
     # Test Data.
     string = "AABAACAADAABAABA"
-    pattern = "AABA"
+    pattern = "ABBC"
 
     # Perform KMP search.
     loc = findOccurrences(string, pattern)
